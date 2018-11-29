@@ -7,32 +7,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <style>
-      html {
-        /* font-size: 10px; */
+      body {
+        max-width: 960px;
       }
       .columns.is-mobile .title {
         font-size: 1rem;
       }
+      .column img {
+        max-width: 200px;
+      }
     </style>
   </head>
   <body>
-    <section class="hero is-info is-medium is-bold">
+    <section class="hero is-link is-medium is-bold">
       <div class="hero-body has-text-centered">
-        <div class="container">
-          <h1 class="title">
-            SCAM DETECTOR
-          </h1>
-          <h2 class="subtitle">
-            LINEで架空請求判定
-          </h2>
+        <div class="container" style="background-color: white; width:70px; height: 70px; border-radius: 35px;">
+          <img src="img/logo.png" style="height: 50px; position:relative; top: 10px">
         </div>
+        <h1 class="title is-size-1-desktop">
+          SCAM DETECTOR
+        </h1>
+        <h2 class="subtitle">
+          LINEで架空請求判定
+        </h2>
       </div>
     </section>
 
     <section class="hero is-primary">
       <div class="hero-body">
         <div class="container">
-          <p>人工知能と専門家 (人間) の「強化知能」で架空請求を判別</p>
+          <p>人工知能と専門家 (人間) の「強化知能」で <span style="white-space: nowrap">架空請求を判別</span></p>
           <p>最新の情報で架空請求に対抗</p>          
         </div>
       </div>
@@ -40,21 +44,21 @@
 
     <section class="section">
       <div class="columns is-mobile is-info">
-        <div class="column has-text-justified">
+        <div class="column has-text-centered">
           <p class="title">完全無料！</p>
           <p>登録料、利用料一切不要です</p>
-          <figure class="image is-4by3">
+          <figure class="image is-64x64 container">
             <img src="img/free.svg">
           </figure>
         </div>
-        <div class="column has-text-justified">
+        <div class="column has-text-centered">
           <p class="title">登録不要！</p>
           <p>個人情報を送信する必要はありません</p>
-          <figure class="image is-4by3">
+          <figure class="image is-64x64 container">
             <img src="img/hand.svg">
           </figure>
         </div>
-        <div class="column has-text-justified">
+        <div class="column has-text-centered">
           <p class="title">正確な判断！</p>
           <p>専門家の知識と経験を人工知能と組み合わせ、正確で素早い判断を提供します</p>
         </div>
