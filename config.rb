@@ -1,3 +1,5 @@
+set :build_dir, 'docs'
+
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
@@ -42,7 +44,8 @@ page '/*.txt', layout: false
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
-# configure :build do
+configure :build do
+  activate :asset_hash
 #   activate :minify_css
 #   activate :minify_javascript
-# end
+end

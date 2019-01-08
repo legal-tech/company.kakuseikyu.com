@@ -7,6 +7,16 @@ body {
 .column img {
   max-width: 200px;
 }
+ol.is-bracket {
+  counter-reset: list;
+  > li {
+    list-style: none;
+  }
+  > li:before {
+    content: "(" counter(list) ") ";
+    counter-increment: list;
+  }
+}
 section.twitter {
   height: 40rem;
   overflow-y: scroll
