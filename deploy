@@ -1,0 +1,6 @@
+#!/usr/bin/env fish
+bundle exec middleman build
+read -l -P 'Commit message: ' message
+git commit -am '$message'
+git push
+
