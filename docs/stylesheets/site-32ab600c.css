@@ -1,0 +1,24 @@
+.has-background-color1 {
+  background-color: #c7feff; }
+
+body {
+  font-family: "M PLUS 1p";
+  max-width: 960px; }
+
+.columns.is-mobile .title {
+  font-size: 1rem; }
+
+.column img {
+  max-width: 200px; }
+
+ol.is-bracket {
+  counter-reset: list; }
+  ol.is-bracket > li {
+    list-style: none; }
+  ol.is-bracket > li:before {
+    content: "(" counter(list) ") ";
+    counter-increment: list; }
+
+section.twitter {
+  height: 40rem;
+  overflow-y: scroll; }
