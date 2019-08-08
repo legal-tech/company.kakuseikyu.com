@@ -20,11 +20,22 @@ body {
   background-color: white;
   box-shadow: 0 0 20px 10px gray;
 }
+.logo {
+  background-color: white;
+  width: 170px;
+  height: 170px;
+  border-radius: 35px;
+  margin-bottom: 1rem; 
+  @keyframes zoom-out {
+    from { opacity: 0; transform: scale(10); }
+    to   { opacity: 1; transform: none; }
+  }
+  img {
+    animation: zoom-out 3s;
+  }
+}
 .columns.is-mobile .title {
   font-size: 1rem;
-}
-.column img {
-  max-width: 200px;
 }
 ol.is-bracket {
   counter-reset: list;

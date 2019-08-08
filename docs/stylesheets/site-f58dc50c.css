@@ -1,0 +1,63 @@
+@font-face {
+  font-family: minmoji;
+  src: url("https://minmoji.ucda.jp/fontseot/https%3A__company.kakuseikyu.com");
+  src: local("minmoji"), url("https://minmoji.ucda.jp/fontswoff/https%3A__company.kakuseikyu.com") format("woff"), url("https://minmoji.ucda.jp/fonts/https%3A__company.kakuseikyu.com") format("opentype"); }
+
+.has-background-color1 {
+  background-color: #c7feff; }
+
+html {
+  background-image: url("/images/background-6c0d2380.png"); }
+
+body {
+  font-family: minmoji;
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: white;
+  -webkit-box-shadow: 0 0 20px 10px gray;
+          box-shadow: 0 0 20px 10px gray; }
+
+.logo {
+  background-color: white;
+  width: 170px;
+  height: 170px;
+  border-radius: 35px;
+  margin-bottom: 1rem; }
+
+@-webkit-keyframes zoom-out {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(10);
+            transform: scale(10); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none; } }
+
+@keyframes zoom-out {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(10);
+            transform: scale(10); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none; } }
+  .logo img {
+    -webkit-animation: zoom-out 3s;
+            animation: zoom-out 3s; }
+
+.columns.is-mobile .title {
+  font-size: 1rem; }
+
+ol.is-bracket {
+  counter-reset: list; }
+  ol.is-bracket > li {
+    list-style: none; }
+  ol.is-bracket > li:before {
+    content: "(" counter(list) ") ";
+    counter-increment: list; }
+
+section.twitter {
+  height: 40vh;
+  overflow-y: scroll; }

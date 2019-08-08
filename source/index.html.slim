@@ -3,8 +3,8 @@ title: SCAM DETECTOR LINEで架空請求判定
 ---
 section.hero.is-link.is-medium.is-bold
   .hero-body.has-text-centered
-    .container style=("background-color: white; width:70px; height: 70px; border-radius: 35px;") 
-      = image_tag "logo.png", style: "height: 50px; position:relative; top: 10px"
+    .container.logo
+      = image_tag "scamdetector.svg", style: "height: 150px; position:relative; top: 10px"
     h1.title.is-size-1-desktop
       | SCAM DETECTOR
     h2.subtitle
@@ -21,36 +21,39 @@ section.hero.is-primary
 section.section
   .columns.is-mobile.is-info
     .column.has-text-centered
-      p.title 完全無料！
-      p 登録料、利用料一切不要です
-      figure.image.is-64x64.container
-        = image_tag "free.svg"
+      figure.image.is-64x64.is-bordered.container
+        = image_tag "baseline-money_off-24px.svg"
+      p.title 完全無料
+      p 利用料一切不要、広告もなし
     .column.has-text-centered
-      p.title 登録不要！
-      p 個人情報を送信する必要はありません
       figure.image.is-64x64.container
-        = image_tag "hand.svg"
+        = image_tag "baseline-done_all-24px.svg"
+      p.title 登録不要
+      p 氏名等入力せず、すぐに利用
     .column.has-text-centered
-      p.title 正確な判断！
-      p 専門家の知識と経験を人工知能と組み合わせ、正確で素早い判断を提供します
-article.message
-  .message-header
-    p 使い方
-  .message-body
-    p 架空請求ハガキを撮影します
-    p ラインで写真を送信してください
-    p AI が架空請求と判定した場合、瞬時に結果をお伝えします
-    p 自動判定不能の場合、弁護士による判定結果をお知らせいたします (およそ24時間以内)
-article.message
-  .message-header
-    p 注意事項
-  .message-body.is-size-7
-    p 架空請求判定アプリ「ScamDetector」は架空請求かどうかを人工知能と専門家で判断します。
-    p 「ScamDetector」は架空請求を受け取った方が被害に遭わないように LINE による画像送信で素早く架空請求かどうかを判定します。
-    p ですがその判定は絶対ではありません。利用にあたってはあくまでも参考として利用し，少しでも疑しい請求に関しては最寄りの弁護士会に電話して対応を相談してください。
-    p 当アプリの判定にあたって弁護士が判定する場合であっても当該弁護士は回答に関してなんら責任を負うものではありません。
-section.twitter
-  a.twitter-timeline href="https://twitter.com/DetectorScam?ref_src=twsrc%5Etfw"  Tweets by DetectorScam
+      figure.image.is-64x64.container
+        = image_tag "baseline-center_focus_weak-24px.svg"
+      p.title 正確な判断
+      p
+        |専門家と人工知能を組み合わせた
+        nobr 正確で素早い判断
+section.section
+  article.message
+    .message-header
+      p 使い方
+    .message-body
+      p 架空請求ハガキを撮影します
+      p ラインで写真を送信してください
+      p AI が架空請求と判定した場合、瞬時に結果をお伝えします
+      p 自動判定不能の場合、弁護士による判定結果をお知らせいたします (およそ24時間以内)
+  article.message
+    .message-header
+      p 注意事項
+    .message-body.is-size-7
+      p 架空請求判定アプリ「ScamDetector」は架空請求かどうかを人工知能と専門家で判断します。
+      p 「ScamDetector」は架空請求を受け取った方が被害に遭わないように LINE による画像送信で素早く架空請求かどうかを判定します。
+      p ですがその判定は絶対ではありません。利用にあたってはあくまでも参考として利用し，少しでも疑しい請求に関しては最寄りの弁護士会に電話して対応を相談してください。
+      p 当アプリの判定にあたって弁護士が判定する場合であっても当該弁護士は回答に関してなんら責任を負うものではありません。
 
 section.section
   blockquote class="twitter-tweet" data-lang="en"
@@ -61,5 +64,8 @@ section.section
       a href="https://t.co/15Vbwq7SNR" pic.twitter.com/15Vbwq7SNR
     |&mdash; SCAM DETECTOR (@DetectorScam)
     a href="https://twitter.com/DetectorScam/status/1071974088799711233?ref_src=twsrc%5Etfw" December 10, 2018
+
+section.section.twitter
+  a.twitter-timeline href="https://twitter.com/DetectorScam?ref_src=twsrc%5Etfw"  Tweets by DetectorScam
 
 script async="" charset="utf-8" src="https://platform.twitter.com/widgets.js" 
