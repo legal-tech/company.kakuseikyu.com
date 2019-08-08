@@ -1,11 +1,24 @@
+@font-face {
+    font-family: minmoji;
+    src: url('https://minmoji.ucda.jp/fontseot/https%3A__company.kakuseikyu.com');
+    src: local('minmoji'),
+        url('https://minmoji.ucda.jp/fontswoff/https%3A__company.kakuseikyu.com') format('woff'),
+        url('https://minmoji.ucda.jp/fonts/https%3A__company.kakuseikyu.com') format('opentype');
+}
+
 $color1: #c7feff;
 .has-background-color1 {
   background-color: $color1;
 }
-
+html {
+  background-image: image-url('background.png')
+}
 body {
-  font-family: "M PLUS 1p";
+  font-family: minmoji;
   max-width: 960px;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 0 20px 10px gray;
 }
 .columns.is-mobile .title {
   font-size: 1rem;
@@ -24,6 +37,6 @@ ol.is-bracket {
   }
 }
 section.twitter {
-  height: 40rem;
+  height: 40vh;
   overflow-y: scroll
 }

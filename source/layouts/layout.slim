@@ -1,5 +1,5 @@
 doctype html
-html.has-background-light
+html
   head
     meta charset="utf-8" /
     meta content="width=device-width, initial-scale=1" name="viewport" /
@@ -16,9 +16,11 @@ html.has-background-light
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'UA-130470726-1');
-  body.has-background-white
+  body
     = yield
     footer.footer
+      .content.is-pulled-right
+        script type="text/javascript" src="https://minmoji.ucda.jp/sealjs/https%3A__company.kakuseikyu.com"
       .content.has-text-centered
         p
           a href="/"  Home
