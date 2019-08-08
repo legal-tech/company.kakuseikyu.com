@@ -49,6 +49,8 @@ ol.is-bracket {
 }
 iframe {
   width: 1px !important;
+  min-width: 100% !important;
+  overflow-y: scroll;
 }
 section.twitter {
   height: 40vh;

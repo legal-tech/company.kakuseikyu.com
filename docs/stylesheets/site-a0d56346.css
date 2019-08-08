@@ -59,7 +59,9 @@ ol.is-bracket {
     counter-increment: list; }
 
 iframe {
-  width: 1px !important; }
+  width: 1px !important;
+  min-width: 100% !important;
+  overflow-y: scroll; }
 
 section.twitter {
   height: 40vh;
