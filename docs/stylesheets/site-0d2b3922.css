@@ -59,7 +59,7 @@ ol.is-bracket {
     counter-increment: list; }
 
 iframe {
-  width: 10000px !important; }
+  width: 1px !important; }
 
 section.twitter {
   height: 40vh;
