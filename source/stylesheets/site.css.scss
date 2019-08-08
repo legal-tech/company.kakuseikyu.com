@@ -47,7 +47,15 @@ ol.is-bracket {
     counter-increment: list;
   }
 }
+iframe {
+  width: 10000px !important;
+}
 section.twitter {
   height: 40vh;
   overflow-y: scroll
+}
+.minmoji-seal {
+  @media (min-width: 570px){
+    float: right;
+  }
 }
