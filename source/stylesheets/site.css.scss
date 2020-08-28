@@ -1,9 +1,11 @@
 @font-face {
-    font-family: minmoji;
-    src: url('https://minmoji.ucda.jp/fontseot/https%3A__company.kakuseikyu.com');
-    src: local('minmoji'),
-        url('https://minmoji.ucda.jp/fontswoff/https%3A__company.kakuseikyu.com') format('woff'),
-        url('https://minmoji.ucda.jp/fonts/https%3A__company.kakuseikyu.com') format('opentype');
+  font-family: minmoji;
+  src: url('https://minmoji.ucda.jp/fontseot/https%3A__company.kakuseikyu.com');
+  src: local('minmoji'),
+    url('https://minmoji.ucda.jp/fontswoff/https%3A__company.kakuseikyu.com')
+      format('woff'),
+    url('https://minmoji.ucda.jp/fonts/https%3A__company.kakuseikyu.com')
+      format('opentype');
 }
 
 $color1: #c7feff;
@@ -11,7 +13,7 @@ $color1: #c7feff;
   background-color: $color1;
 }
 html {
-  background-image: image-url('background.png')
+  background-image: image-url('background.png');
 }
 body {
   font-family: minmoji;
@@ -25,10 +27,16 @@ body {
   width: 170px;
   height: 170px;
   border-radius: 35px;
-  margin-bottom: 1rem; 
+  margin-bottom: 1rem;
   @keyframes zoom-out {
-    from { opacity: 0; transform: scale(10); }
-    to   { opacity: 1; transform: none; }
+    from {
+      opacity: 0;
+      transform: scale(10);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
   }
   img {
     animation: zoom-out 3s;
@@ -43,21 +51,16 @@ ol.is-bracket {
     list-style: none;
   }
   > li:before {
-    content: "(" counter(list) ") ";
+    content: '(' counter(list) ') ';
     counter-increment: list;
   }
 }
-iframe {
-  width: 1px !important;
-  min-width: 100% !important;
-  overflow-y: scroll;
-}
 section.twitter {
   height: 40vh;
-  overflow-y: scroll
+  overflow-y: scroll;
 }
 .minmoji-seal {
-  @media (min-width: 570px){
+  @media (min-width: 570px) {
     float: right;
   }
 }
